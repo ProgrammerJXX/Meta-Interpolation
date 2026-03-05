@@ -18,3 +18,8 @@ Data Link: [download link for Model 94]([https://wiki.seg.org/wiki/SEG_C3_45_sho
 Description: [SEGY File Information:]
 
 Data Link: [download link for MAVO]([[https://wiki.seg.org/wiki/SEG_C3_45_shot](https://wiki.seg.org/wiki/1994_BP_migration_from_topography](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12)))
+
+## Training
+ '''
+ sh 
+ '''
