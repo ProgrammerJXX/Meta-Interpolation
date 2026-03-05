@@ -18,9 +18,7 @@ from skimage.metrics import peak_signal_noise_ratio as compare_psnr
 from skimage.metrics import structural_similarity as compare_ssim
 import matplotlib.pyplot as plt
 import socket
-# 获取当前主机的主机名
-hostname = socket.gethostname()
-swanlab.login(api_key='I4Ge4KHvI92q1Bg5DkrRl')
+
 
 from models.base_models import Refine, Discriminator
 from models.vgg import Vgg16
@@ -1123,3 +1121,4 @@ if __name__ == '__main__':
     # Finish the run and upload any remaining data.
     if config.online_vis != 'not_use':
         run.finish()   
+
