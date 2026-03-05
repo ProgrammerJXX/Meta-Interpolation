@@ -563,49 +563,13 @@ if __name__ == '__main__':
     
     # Path
     root_path = config.root_path
-    if hostname == "ubuntu-SYS-420GP-TNR":
-        config.train_data_dir = os.path.join(root_path, "link8TB/dax_result/datasets", config.train_data_dir)
-        config.val_data_dir = os.path.join(root_path, "link8TB/dax_result/datasets", config.val_data_dir)
-        config.test_data_dir = os.path.join(root_path, "link8TB/dax_result/datasets", config.test_data_dir)
-        config.model_source_load_path = os.path.join(root_path, "link8TB/dax_result/datasets/Hint_seismic", config.model_source_load_path)
-        config.save = os.path.join(root_path, "link8TB/dax_result/datasets/Hint_seismic", config.save)
-        config.pt_path = os.path.join(root_path, "link8TB/dax_result/datasets/Hint_seismic", config.pt_path)
-    elif hostname == "ubuntu":
-        config.train_data_dir = os.path.join(root_path.replace('code', 'link14TB'), config.train_data_dir)
-        config.val_data_dir = os.path.join(root_path.replace('code', 'link14TB'), config.val_data_dir)
-        config.test_data_dir = os.path.join(root_path.replace('code', 'link14TB'), config.test_data_dir)
-        config.model_source_load_path = os.path.join(root_path.replace('code', 'link14TB'), config.model_source_load_path)
-        config.save = os.path.join(root_path.replace('code', 'link14TB'), config.save)
-        config.pt_path = os.path.join(root_path.replace('code', 'link14TB'), config.pt_path)
-    elif hostname == "cxg3004-zhang":
-        config.train_data_dir = os.path.join(root_path, config.train_data_dir)
-        config.val_data_dir = os.path.join(root_path, config.val_data_dir)
-        config.test_data_dir = os.path.join(root_path, config.test_data_dir)
-        config.model_source_load_path = os.path.join(root_path, config.model_source_load_path)
-        config.save = os.path.join(root_path, config.save)
-        config.pt_path = os.path.join(root_path, config.pt_path)
-    elif hostname == "xjtu-Sun-04":
-        config.train_data_dir = os.path.join(root_path.replace('code', 'data'), config.train_data_dir)
-        config.val_data_dir = os.path.join(root_path.replace('code', 'data'), config.val_data_dir)
-        config.test_data_dir = os.path.join(root_path.replace('code', 'data'), config.test_data_dir)
-        config.model_source_load_path = os.path.join(root_path, config.model_source_load_path)
-        config.save = os.path.join(root_path, config.save)
-        config.pt_path = os.path.join(root_path, config.pt_path)
-    elif hostname == "xjtu-Sun-08":
-        config.train_data_dir = os.path.join(root_path.replace('demo', 'data'), config.train_data_dir)
-        config.val_data_dir = os.path.join(root_path.replace('demo', 'data'), config.val_data_dir)
-        config.test_data_dir = os.path.join(root_path.replace('demo', 'data'), config.test_data_dir)
-        config.save = os.path.join(root_path, config.save)
-        config.pt_path = os.path.join(root_path, config.pt_path)
-    elif hostname == "PC-20201112YXPH":
-        config.train_data_dir = os.path.join('G:\seismic data', config.train_data_dir)
-        config.val_data_dir = os.path.join('G:\seismic data', config.val_data_dir)
-        config.test_data_dir = os.path.join('G:\seismic data', config.test_data_dir)
-        config.model_source_load_path = os.path.join('G:', config.model_source_load_path)
-        config.save = os.path.join('G:', config.save)
-        config.pt_path = os.path.join('G:',  config.pt_path)
-    else:
-        print("hostname:", hostname, "Unkown")
+    config.train_data_dir = os.path.join('G:\seismic data', config.train_data_dir)
+    config.val_data_dir = os.path.join('G:\seismic data', config.val_data_dir)
+    config.test_data_dir = os.path.join('G:\seismic data', config.test_data_dir)
+    config.model_source_load_path = os.path.join('G:', config.model_source_load_path)
+    config.save = os.path.join('G:', config.save)
+    config.pt_path = os.path.join('G:',  config.pt_path)
+
 
     # Model initialization
     model_source, model_target, source_config = load_model(config, config.train_source_model, device=device)
@@ -1121,4 +1085,5 @@ if __name__ == '__main__':
     # Finish the run and upload any remaining data.
     if config.online_vis != 'not_use':
         run.finish()   
+
 
