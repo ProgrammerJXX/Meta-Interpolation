@@ -30,22 +30,6 @@ The project is organized as follows:
 | `train_cd_sd_cb_attn_attnd.py` | Main entry point for training the meta-learning framework |
 | `requirements.txt` | Python package dependencies |
 
-<!-- 添加：代码架构详细说明 -->
-
-### 🏗 Network Architecture
-
-Our main interpolation network `IN_net_Unet` is implemented in `models/compare_models.py`.
-
-### Network Components
-
-| Network | File | Description |
-|---------|------|-------------|
-| **Auxiliary Network (AN)** | `models/compare_models.py` | Pre-trained on complete seismic data |
-| **Interpolation Network (IN)** | `models/compare_models.py` | Main network for reconstruction |
-| **Meta-Network (MN)** | `models/meta_network.py` | Controls distillation loss adaptation |
-| **Loss Functions** | `utils/loss.py` | Combined L1, SSIM, Perceptual losses |
-
-<!-- 添加：网络架构详细说明，包含文件位置 -->
 
 ### 📊 Datasets
 
