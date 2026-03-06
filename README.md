@@ -18,12 +18,12 @@ Data Link: [download link for SEG C3](https://wiki.seg.org/wiki/SEG_C3_45_shot)
 ## Dataset Model94
 Description: [SEGY File Information:Number of shots: 277 shots;Number of traces per shot: 480 traces per shot record;Group interval: 15 m;Shot interval: 90 m]
 
-Data Link: [download link for Model 94]((https://wiki.seg.org/wiki/1994_BP_migration_from_topography))
+Data Link: [download link for Model 94](https://wiki.seg.org/wiki/1994_BP_migration_from_topography)
 
 ## MAVO Field Dataset
 Description: [SEGY File Information:]
 
-Data Link: [download link for MAVO]((https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12))) 
+Data Link: [download link for MAVO](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12)
 
 # 2.Training
 We have provided the example training scripts. Run in terminal:
