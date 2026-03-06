@@ -12,17 +12,6 @@
 - **Better performance** under random missing, consecutive missing, and noisy scenarios
 - **Enhanced generalization** across different geological settings and acquisition geometries
 
-<!-- 添加：项目概述 -->
-
-## 📄 Abstract
-
-Seismic data interpolation is crucial for improving data quality and ensuring reliable subsurface interpretation. While deep learning methods have shown strong potential for this task, they often struggle to preserve the spatial continuity and global consistency of seismic data under complex missing conditions, leading to amplitude distortion and reduced accuracy in subsequent geological interpretation and reservoir evaluation.
-
-To address this issue, we propose a meta-learning-based framework consisting of an auxiliary network (AN) and an interpolation network (IN), which adaptively learns complete seismic features with strong spatial continuity. The proposed meta-learning framework involves two stages: meta-training and meta-testing. The AN is pre-trained on complete seismic data to capture comprehensive features with strong spatial continuity. During meta-training, the meta-network (MN) is trained to control the distillation loss, enabling the IN to effectively learn seismic prior knowledge from the AN, resulting in a trained MN. During meta-testing, MN adaptively adjusts the distillation loss weights according to the input, guiding IN to learn the seismic prior features from AN, capturing both spatial continuity and global consistency.
-
-Extensive experiments conducted under random missing, consecutive missing, and noisy data missing scenarios demonstrate that the proposed framework significantly improves the quality, efficiency, and generalization of seismic interpolation.
-
-
 
 ## 📁 Code Architecture
 
