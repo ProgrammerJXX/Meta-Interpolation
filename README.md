@@ -51,7 +51,8 @@ We provide three benchmark datasets for seismic interpolation research:
 ### 📊 Datasets
 
 We provide three benchmark datasets for seismic interpolation research:
-<img width="762" height="100" alt="image" src="https://github.com/user-attachments/assets/e2ee3fd8-4b85-4ecb-9d74-71733b06947f" />
+<img width="1530" height="184" alt="image" src="https://github.com/user-attachments/assets/5d535d69-273e-4d62-a54b-9fd59aa83ec0" />
+
 
 | Attribute | SEG C3 | Model94 | MAVO Field |
 |-----------|--------|---------|------------|
@@ -142,11 +143,8 @@ python test.py
 
 ### Performance Comparison
 
-| Method | Random Missing (30%) | Consecutive Missing (30%)  | Noisy Data |
-|--------|---------------------|---------------------|------------|
-| **Ours** | **32.45 dB** | **29.87 dB** | **28.32 dB** |
-| Baseline 1 | 30.12 dB | 27.34 dB | 25.67 dB |
-| Baseline 2 | 31.08 dB | 28.12 dB | 26.89 dB |
+<img width="1539" height="536" alt="image" src="https://github.com/user-attachments/assets/34b39b8a-45cd-4e06-a15e-88cf7c7ad030" />
+
 
 *Results reported as PSNR on SEG C3 test set*
 
