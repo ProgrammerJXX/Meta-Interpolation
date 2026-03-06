@@ -112,16 +112,6 @@ python train_cd_sd_cb_attn_attnd.py
 sh Meta_interpolation/train_cd_sd_cb_attn_attnd_abl_v4.1_M_30_T_1_L_10_lc_v2_ls_v1_la_v1_beta_1_MAVG_continus_0.1_0.3_AN_net_Unet_4_64_bn_avg_dcn_v2_attn_ca_L1Loss_v2_SSIM_PerceptLoss_pl_num_1_5.sh
 ```
 
-### Evaluation Metrics (from `utils/metrics.py`)
-
-| Metric | Description | Implementation |
-|--------|-------------|----------------|
-| **SNR** | Signal-to-Noise Ratio | `utils/metrics.py:snr()` |
-| **PSNR** | Peak Signal-to-Noise Ratio | `utils/metrics.py:psnr()` |
-| **SSIM** | Structural Similarity Index | `utils/metrics.py:ssim()` |
-| **MSE** | Root Mean Square Error | `utils/metrics.py:rmse()` |
-| **MAE** | Mean Absolute Error | `utils/metrics.py:mae()` |
-
 ### Visualization
 
 ```bash
