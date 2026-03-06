@@ -47,10 +47,6 @@ Our main interpolation network `IN_net_Unet` is implemented in `models/compare_m
 ## 📊 Datasets
 
 We provide three benchmark datasets for seismic interpolation research:
-
-### 📊 Datasets
-
-We provide three benchmark datasets for seismic interpolation research:
 <img width="1530" height="184" alt="image" src="https://github.com/user-attachments/assets/5d535d69-273e-4d62-a54b-9fd59aa83ec0" />
 
 
