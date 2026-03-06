@@ -128,33 +128,6 @@ sh Meta_interpolation/train_cd_sd_cb_attn_attnd_abl_v4.1_M_30_T_1_L_10_lc_v2_ls_
 python utils/plot.py 
 ```
 
-<!-- 添加：评估说明，包含metrics模块引用 -->
-
-## 🔍 Inference
-
-### Run Inference on Custom Data
-
-```bash
-python test.py 
-
-<!-- 添加：推理脚本说明 -->
-
-## 📊 Results
-
-### Performance Comparison
-
-<img width="1539" height="536" alt="image" src="https://github.com/user-attachments/assets/34b39b8a-45cd-4e06-a15e-88cf7c7ad030" />
-
-
-*Results reported as PSNR on SEG C3 test set*
-
-### Key Findings
-1. **spatial continuity** preserved in reconstructed sections
-2. **Robust performance** across different missing patterns
-3. **Amplitude preservation** maintains geological interpretability
-4. **Fast inference** suitable for large-scale applications
-
-
 ## 📝 Citation
 
 If you use this code or dataset in your research, please cite:
@@ -175,9 +148,6 @@ If you use this code or dataset in your research, please cite:
 ## 📬 Contact
 
 For questions or collaboration opportunities:
-- **Maintainer**: [Your Name](mailto:your.email@institution.edu)
 - **GitHub Issues**: [Open an issue](https://github.com/yourusername/Meta-Interpolation/issues)
 
-
-**Note**: The code will be made publicly available upon paper acceptance. For early access, please contact the authors.
 
