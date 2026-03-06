@@ -51,18 +51,10 @@ We provide three benchmark datasets for seismic interpolation research:
 ### 📊 Datasets
 
 We provide three benchmark datasets for seismic interpolation research:
+<img width="762" height="100" alt="image" src="https://github.com/user-attachments/assets/e2ee3fd8-4b85-4ecb-9d74-71733b06947f" />
 
 | Attribute | SEG C3 | Model94 | MAVO Field |
 |-----------|--------|---------|------------|
-| **Shots** | 45 | 277 | - |
-| **Samples/Trace** | 625 | - | - |
-| **Traces/Shot** | - | 480 | - |
-| **Sample Rate** | 8 ms | - | - |
-| **Receiver Grid** | 201 × 201 | - | - |
-| **Grid Spacing** | dx, dy = 20 m | - | - |
-| **Group Interval** | - | 15 m | - |
-| **Shot Interval** | - | 90 m | - |
-| **Format** | SEG-Y | SEG-Y | SEG-Y |
 | **Download** | [Link](https://wiki.seg.org/wiki/SEG_C3_45_shot) | [Link](https://wiki.seg.org/wiki/1994_BP_migration_from_topography) | [Link](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12) |
 
 ## 💻 Installation
