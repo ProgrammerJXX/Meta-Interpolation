@@ -119,8 +119,7 @@ python utils/plot.py
 If you use this code or dataset in your research, please cite:
 
 ```bibtex
-@article{yourname2024meta,
-  title={Meta-Interpolation: An Efficient Seismic Data Interpolation Framework for Adaptive Spatial Continuity Modeling}
+@article{Jiang etal.  title={Meta-Interpolation: An Efficient Seismic Data Interpolation Framework for Adaptive Spatial Continuity Modeling}
 }
 ```
 
