@@ -31,7 +31,7 @@ The project is organized as follows:
 
 ## 🏗 Network Architecture
 
-Our main interpolation network `AN_net_Unet` is implemented in `models/compare_models.py`.
+Our main interpolation network `IN_net_Unet` is implemented in `models/compare_models.py`.
 
 ### Network Components
 
@@ -48,43 +48,26 @@ Our main interpolation network `AN_net_Unet` is implemented in `models/compare_m
 
 We provide three benchmark datasets for seismic interpolation research:
 
-### Dataset SEG C3
-| Attribute | Value |
-|-----------|-------|
-| **Shots** | 45 |
-| **Samples/Trace** | 625 |
-| **Sample Rate** | 8 ms |
-| **Receiver Grid** | 201 × 201 |
-| **Grid Spacing** | dx, dy = 20 m |
-| **Format** | SEG-Y |
-| **Loader** | `dataset/seg_c3_dataset.py` |
+### 📊 Datasets
 
-**Download**: [SEG C3 Dataset](https://wiki.seg.org/wiki/SEG_C3_45_shot)
+We provide three benchmark datasets for seismic interpolation research:
 
-### Dataset Model94
-| Attribute | Value |
-|-----------|-------|
-| **Shots** | 277 |
-| **Traces/Shot** | 480 |
-| **Group Interval** | 15 m |
-| **Shot Interval** | 90 m |
-| **Format** | SEG-Y |
-| **Loader** | `dataset/model94_dataset.py` |
-
-**Download**: [1994 BP Model](https://wiki.seg.org/wiki/1994_BP_migration_from_topography)
-
-### MAVO Field Dataset
-| Attribute | Value |
-|-----------|-------|
-| **Source** | Mobil AVO Viking Graben Line 12 |
-| **Line ID** | 12 |
-| **Location** | Viking Graben, North Sea |
-| **Format** | SEG-Y |
-| **Loader** | `dataset/mavo_dataset.py` |
-
-**Download**: [MAVO Dataset](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12)
-
-<!-- 添加：数据集信息，包含对应的loader文件 -->
+| Attribute | SEG C3 | Model94 | MAVO Field |
+|-----------|--------|---------|------------|
+| **Shots** | 45 | 277 | - |
+| **Samples/Trace** | 625 | - | - |
+| **Traces/Shot** | - | 480 | - |
+| **Sample Rate** | 8 ms | - | - |
+| **Receiver Grid** | 201 × 201 | - | - |
+| **Grid Spacing** | dx, dy = 20 m | - | - |
+| **Group Interval** | - | 15 m | - |
+| **Shot Interval** | - | 90 m | - |
+| **Source** | - | - | Mobil AVO Viking Graben Line 12 |
+| **Line ID** | - | - | 12 |
+| **Location** | - | - | Viking Graben, North Sea |
+| **Format** | SEG-Y | SEG-Y | SEG-Y |
+| **Loader** | `dataset/seg_c3_dataset.py` | `dataset/model94_dataset.py` | `dataset/mavo_dataset.py` |
+| **Download** | [Link](https://wiki.seg.org/wiki/SEG_C3_45_shot) | [Link](https://wiki.seg.org/wiki/1994_BP_migration_from_topography) | [Link](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12) |
 
 ## 💻 Installation
 
