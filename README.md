@@ -1,24 +1,6 @@
 
 # Meta-Interpolation: An Efficient Seismic Data Interpolation Framework for Adaptive Spatial Continuity Modeling
 
-## 📖 Table of Contents
-- [Project Overview](#project-overview)
-- [Abstract](#abstract)
-- [Key Features](#key-features)
-- [Methodology](#methodology)
-- [Code Architecture](#code-architecture)
-- [Network Architecture](#network-architecture)
-- [Datasets](#datasets)
-- [Installation](#installation)
-- [Data Preparation](#data-preparation)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Results](#results)
-- [Citation](#citation)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
-<!-- 添加：目录结构 -->
 
 ## 🔭 Project Overview
 
@@ -40,29 +22,6 @@ To address this issue, we propose a meta-learning-based framework consisting of 
 
 Extensive experiments conducted under random missing, consecutive missing, and noisy data missing scenarios demonstrate that the proposed framework significantly improves the quality, efficiency, and generalization of seismic interpolation.
 
-## ✨ Key Features
-
-- **Meta-learning architecture**: Two-stage training paradigm for adaptive feature learning
-- **Spatial continuity preservation**: Novel distillation mechanism for maintaining geological consistency
-- **Multi-scenario handling**: Robust performance across various missing patterns and noise levels
-- **Modular design**: Easily extendable architecture for different backbone networks
-- **Comprehensive evaluation**: Extensive benchmarking on public and field datasets
-
-<!-- 添加：功能特性 -->
-
-## 🎯 Methodology
-
-### Two-Stage Meta-Learning Framework
-
-**Stage 1: Meta-Training**
-- Pre-train Auxiliary Network (AN) on complete seismic data
-- Train Meta-Network (MN) to control distillation loss
-- Enable Interpolation Network (IN) to learn seismic prior knowledge from AN
-
-**Stage 2: Meta-Testing**
-- MN adaptively adjusts distillation loss weights based on input
-- IN learns seismic prior features from AN
-- Capture both spatial continuity and global consistency
 
 
 ## 📁 Code Architecture
@@ -140,11 +99,6 @@ We provide three benchmark datasets for seismic interpolation research:
 
 ## 💻 Installation
 
-### Prerequisites
-- Python 3.8 or higher
-- PyTorch 1.9 or higher
-- CUDA-capable GPU (recommended for training)
-
 ### Setup
 
 1. **Clone the repository**
@@ -153,15 +107,7 @@ git clone https://github.com/yourusername/Meta-Interpolation.git
 cd Meta-Interpolation
 ```
 
-2. **Create virtual environment (recommended)**
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate  # Windows
-```
-
-3. **Install dependencies**
+2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
