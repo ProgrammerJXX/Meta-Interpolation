@@ -2,7 +2,7 @@
 # Meta-Interpolation: An Efficient Seismic Data Interpolation Framework for Adaptive Spatial Continuity Modeling
 
 
-## 🔭 Project Overview
+## Project Overview
 
 **Meta-Interpolation** is a novel meta-learning-based framework for seismic data interpolation that adaptively learns complete seismic features with strong spatial continuity. Unlike conventional deep learning methods that struggle to preserve spatial continuity under complex missing conditions, our approach introduces a dual-network architecture with adaptive distillation loss to maintain both local and global consistency in reconstructed seismic data.
 
@@ -11,6 +11,9 @@
 - **Adaptive spatial continuity modeling** through meta-network controlled distillation
 - **Better performance** under random missing, consecutive missing, and noisy scenarios
 - **Enhanced generalization** across different geological settings and acquisition geometries
+## Results
+
+<img width="1541" height="537" alt="image" src="https://github.com/user-attachments/assets/12076388-059c-4d3c-b97f-c241b6f381f0" />
 
 
 ## 📁 Code Architecture
