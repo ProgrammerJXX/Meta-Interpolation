@@ -29,7 +29,7 @@ The project is organized as follows:
 
 <!-- 添加：代码架构详细说明 -->
 
-## 🏗 Network Architecture
+### 🏗 Network Architecture
 
 Our main interpolation network `IN_net_Unet` is implemented in `models/compare_models.py`.
 
@@ -44,7 +44,7 @@ Our main interpolation network `IN_net_Unet` is implemented in `models/compare_m
 
 <!-- 添加：网络架构详细说明，包含文件位置 -->
 
-## 📊 Datasets
+### 📊 Datasets
 
 We provide three benchmark datasets for seismic interpolation research:
 <img width="1530" height="184" alt="image" src="https://github.com/user-attachments/assets/5d535d69-273e-4d62-a54b-9fd59aa83ec0" />
