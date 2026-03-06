@@ -62,11 +62,7 @@ We provide three benchmark datasets for seismic interpolation research:
 | **Grid Spacing** | dx, dy = 20 m | - | - |
 | **Group Interval** | - | 15 m | - |
 | **Shot Interval** | - | 90 m | - |
-| **Source** | - | - | Mobil AVO Viking Graben Line 12 |
-| **Line ID** | - | - | 12 |
-| **Location** | - | - | Viking Graben, North Sea |
 | **Format** | SEG-Y | SEG-Y | SEG-Y |
-| **Loader** | `dataset/seg_c3_dataset.py` | `dataset/model94_dataset.py` | `dataset/mavo_dataset.py` |
 | **Download** | [Link](https://wiki.seg.org/wiki/SEG_C3_45_shot) | [Link](https://wiki.seg.org/wiki/1994_BP_migration_from_topography) | [Link](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12) |
 
 ## 💻 Installation
