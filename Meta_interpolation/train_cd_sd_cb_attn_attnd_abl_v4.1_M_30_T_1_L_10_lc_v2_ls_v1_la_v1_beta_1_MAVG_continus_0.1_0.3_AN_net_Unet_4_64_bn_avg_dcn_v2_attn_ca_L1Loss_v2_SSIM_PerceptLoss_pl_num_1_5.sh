@@ -10,29 +10,9 @@ if [ "$OS_TYPE" = "Linux" ]; then
     # Linux 系统
     UBUNTU_HOSTNAME=$(hostname)
     case $UBUNTU_HOSTNAME in
-        "cxg3004-zhang")
-        python_exec="/home/cxg3004_jbs/.conda/envs/jbs2/bin/python"
-        script_path="/home/cxg3004_jbs/code/Distill_model/train_cd_sd_cb_attn_attnd.py"
-        GPU=0
-            ;;
-        "ubuntu-SYS-420GP-TNR")
-        python_exec="python"
-        script_path="/home/cxg2007_dax/Distill_model/train_cd_sd_cb_attn_attnd.py"
-        GPU=1
-            ;;
         "ubuntu")
         python_exec="python"
-        script_path="/home/cxg_jbs/code/Distill_model/train_cd_sd_cb_attn_attnd.py"
-        GPU=1
-            ;;
-        "xjtu-Sun-04")
-        python_exec="/home/xjtu/anaconda3/envs/torch2/bin/python"
-        script_path="/home/xjtu/znq/code/Distill_model/train_cd_sd_cb_attn_attnd.py"
-        GPU=0
-            ;;
-        "xjtu-Sun-08")
-        python_exec="/home/xjtu/Anaconda3/anaconda3/envs/torch2/bin/python"
-        script_path="/home/xjtu/znq/demo/Distill_model/train_cd_sd_cb_attn_attnd.py"
+        script_path="/home/code/Distill_model/train_cd_sd_cb_attn_attnd.py"
         GPU=1
             ;;
         *)
@@ -40,11 +20,6 @@ if [ "$OS_TYPE" = "Linux" ]; then
             exit 1
             ;;
     esac
-elif echo "$OS_TYPE" | grep -qE '^MINGW|^MSYS|^CYGWIN'; then
-    # Windows 系统（MinGW/MSYS/Cygwin） MINGW64_NT-10.0-18363
-    python_exec="D:/Anaconda/Anaconda/envs/jbs2/python.exe"
-    script_path="E:/PycharmProject1/Project1/Distill_model/train_cd_sd_cb_attn_attnd.py"
-    GPU=0
 else
     echo "Unsupported OS: $OS_TYPE"
     exit 1
@@ -120,9 +95,9 @@ for lr in "${Lrs[@]}"; do
     --loss_weight_cd \
     --loss_weight_sd \
     --loss_weight_type relu \
-    --loss_weight_init 0.5 \
-    --loss_weight_init_sd 0.1 \
-    --loss_weight_init_attnd 0.1 \
+    --loss_weight_init 1 \
+    --loss_weight_init_sd 1 \
+    --loss_weight_init_attnd 1 \
     --beta 1 \
     --beta_mt 1 \
     --use_mask \
