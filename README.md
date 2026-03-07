@@ -37,7 +37,7 @@ We provide three benchmark datasets for seismic interpolation research:
 <img width="1530" height="184" alt="image" src="https://github.com/user-attachments/assets/5d535d69-273e-4d62-a54b-9fd59aa83ec0" />
 
 
-| Attribute | SEG C3 | Model94 | MAVO Field |
+| Attribute | SEG C3 | Model94 | MAVO |
 |-----------|--------|---------|------------|
 | **Download** | [Link](https://wiki.seg.org/wiki/SEG_C3_45_shot) | [Link](https://wiki.seg.org/wiki/1994_BP_migration_from_topography) | [Link](https://wiki.seg.org/wiki/Mobil_AVO_viking_graben_line_12) |
 
