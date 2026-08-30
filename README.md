@@ -106,7 +106,14 @@ python utils/plot.py
 If you use this code or dataset in your research, please cite:
 
 ```bibtex
-@article{Jiang etal.  title={Meta-Interpolation: An Efficient Seismic Data Interpolation Framework for Adaptive Spatial Continuity Modeling}
+@article{jiang2026meta,
+  author  = {Jiang, Y. and Zhang, C. and others},
+  title   = {Meta-Interpolation: An Efficient Seismic Data Interpolation Framework for Adaptive Spatial Continuity Modeling},
+  journal = {Geophysical Prospecting},
+  year    = {2026},
+  pages   = {2685--2701},
+  doi     = {10.1111/1365-2478.70252},
+  url     = {https://doi.org/10.1111/1365-2478.70252}
 }
 ```
 
